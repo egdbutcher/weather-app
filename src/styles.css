@@ -5,9 +5,50 @@ body {
 
 .weather-app-container {
   background-color: white;
-  max-width: 600px;
-  padding: 40px;
+  max-width: 650px;
+  padding: 30px;
   margin: 60px auto;
   border-radius: 16px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+form input {
+  padding: 15px;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 18px;
+}
+
+.search-form-input {
+  width: 73%;
+  background-color: #f9f7fe;
+}
+.search-form-submit {
+  width: 25%;
+  font-weight: bold;
+  background-color: #966be7;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
+  font-weight: 500;
+  padding-top: 30px;
+  border-top: 1px solid rgb(224, 224, 224);
+}
+
+footer p {
+  margin: 0;
+}
+
+a {
+  color: #966be7;
 }
