@@ -7,6 +7,41 @@
   </head>
   <body>
     <h1>Welcome to the Weather App</h1>
+    <header>
+      <form id="city-form">
+        <input
+          type="search"
+          placeholder="Enter a city..."
+          class="form-search"
+          required
+          id="city-input"
+        />
+        <input type="submit" value="Search" class="form-submit" />
+      </form>
+    </header>
+    <main>
+      <div class="current-weather">
+        <div class="highlights">
+          <h1 id="current-city">Paris</h1>
+          <ul>
+            <li><span id="dayTime">Saturday 15:32</span>, moderate rain</li>
+            <li>
+              Humidity:
+              <strong><span class="weather-highlights">87%</span></strong
+              >, Wind:
+              <strong><span class="weather-highlights">7.2km/h</span></strong>
+            </li>
+          </ul>
+        </div>
+        <div class="temperature">
+          <h2>
+            <span class="temperature-emoji">🌞</span>
+            <span class="temperature-value">14</span
+            ><span class="temperature-unit">°C</span>
+          </h2>
+        </div>
+      </div>
+    </main>
     <footer>
       This project is coded by
       <a href="https://github.com/egdbutcher" target="_blank"> Emily Butcher</a
