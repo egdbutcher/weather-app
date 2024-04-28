@@ -1,5 +1,4 @@
 function refreshWeather(response) {
-  console.log(response.data);
   let temperatureElement = document.querySelector("#temperature-value");
   let temperature = response.data.temperature.current;
   let cityElement = document.querySelector("#defined-city");
