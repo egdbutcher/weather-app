@@ -7,6 +7,7 @@ function refreshWeather(response) {
   let windElement = document.querySelector("#wind");
   let timeElement = document.querySelector("#dayTime");
   let date = new Date(response.data.time * 1000);
+  let emojiElement = document.querySelector("#temperature-emoji");
 
   console.log(response.data);
   console.log(date);
@@ -17,6 +18,7 @@ function refreshWeather(response) {
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
   temperatureElement.innerHTML = Math.round(temperature);
+  emojiElement.innerHTML = `<img src="${response.data.condition.icon_url}" alt="temperature icon" class="temperature-emoji"/>`;
 }
 
 function formatDate(date) {
