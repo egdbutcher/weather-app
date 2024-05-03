@@ -9,8 +9,8 @@ function refreshWeather(response) {
   let date = new Date(response.data.time * 1000);
   let emojiElement = document.querySelector("#temperature-emoji");
 
-  console.log(response.data);
-  console.log(date);
+  // console.log(response.data);
+  // console.log(date);
 
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
